@@ -79,7 +79,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel <br>
+                    <p>{{ date("d/m/Y H:i:s") }} </p>
                 </div>
 
                 <div class="links">

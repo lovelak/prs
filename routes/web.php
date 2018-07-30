@@ -11,6 +11,17 @@
 |
 */
 
+Route::get('about', 'SiteController@index');
+
+Route::get('typebooks', 'TypeBookController@index');
+Route::get('typebooks/destroy/{typebook_id}', 'TypeBookController@destroy');
+
+Route::resource('books', 'BookController');
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
